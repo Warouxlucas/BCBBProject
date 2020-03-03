@@ -1,0 +1,31 @@
+---
+  version: "3"
+  services: 
+    php: 
+      image: "becodeorg/php"
+      volumes: 
+        - "./src:/var/www/html"
+      ports: 
+        - "80:80"
+    mysql: 
+      image: "mariadb"
+      restart: "unless-stopped"
+      volumes: 
+        - "mysql_db:/var/lib/mysql"
+      ports: 
+        - "3306"
+        - "33060"
+      environment: 
+        MYSQL_ROOT_PASSWORD: "root"
+    phpmyadmin: 
+      image: "phpmyadmin/phpmyadmin"
+      ports: 
+        - "8001:80"
+      depends_on: 
+        - "mysql"
+      environment: 
+        PMA_HOST: "mysql"
+        PMA_USER: "root"
+        PMA_PASSWORD: "root"
+  volumes: 
+    mysql_db: 
