@@ -19,6 +19,8 @@
 
 <body>
 
+
+
     <?php
 
     $grav_url = "https://www.gravatar.com/avatar/" . md5(strtolower(trim($email))) . "?d=" . urlencode($default) . "&s=" . $size;
@@ -39,6 +41,9 @@
     while ($data = $req->fetch()) {
     ?>
         <div class="container">
+            <a href="topics.php">
+                <button class="btn btn-primary">Retour aux topics</button>
+            </a>
             <div class="media">
                 <img src="<?php echo $grav_url ?>" alt="" class="mr-3">
                 <div class="media-body">
@@ -56,6 +61,8 @@
         $message
     );
 
+    $idTopics = '';
+
     while ($data = $reqMessage->fetch()) {
         ?>
 
@@ -70,14 +77,41 @@
                 </div>
             </div>
 
-
-
+            <?php $idTopics = $data['id'] ?>
 
         <?php
     }
 
 
         ?>
+
+        <form class="form-group" action="topicsDetail.php?title=<?php echo urlencode($title) ?>" method="POST">
+            <textarea name="message" id="" cols="30" rows="10" class="message form-control"></textarea>
+            <button type="submit" class="btn btn-outline-success">Envoyé</button>
+        </form>
+
+        <?php
+        $reqPostMessage = $bdd->prepare('INSERT INTO messages(content_message, users_id, topics_id) VALUES (:content_message, :users_id, :topics_id)');
+        if (isset($_POST['message'])) {
+            $reqPostMessage->execute(array(
+                'content_message' => $_POST['message'],
+                'users_id' => 1,
+                'topics_id' => $idTopics
+            ));
+
+            echo '<meta http-equiv="refresh" content="0">';
+            $_POST['message'] = null;
+            $reqPostMessage->closeCursor();
+        }
+
+
+
+
+
+
+
+        ?>
+
 
 
 

@@ -22,6 +22,9 @@
     <div class="container">
 
         <h1>Topics</h1>
+        <a href="topicsCreate.php">
+            <button class="btn btn-outline-info">Create a topic</button>
+        </a>
 
     </div>
 
@@ -36,12 +39,6 @@
     } catch (Exception $err) {
         die('Erreur : ' . $err->getMessage());
     }
-
-    // $req = $bdd->query('SELECT title, users_id FROM topics ORDER BY creation_date
-    // INNER JOIN users
-    // WHERE topics.users_id = users.nickname
-    // ');
-
 
     $req = $bdd->query(
         'SELECT *
@@ -79,7 +76,7 @@
                     <p>Autor : <?php echo $data['nickname'] ?></p>
 
                     <?php echo substr($data['content'], 0, 100) ?>
-                    <a href="topicsDetail.php?title=<?php echo $data['title'] ?>">
+                    <a href="topicsDetail.php?title=<?php echo urlencode($data['title']) ?>">
                         ...</br>
                         <button class="btn btn-primary">En savoir plus</button>
                     </a>
