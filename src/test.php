@@ -1,6 +1,8 @@
 <?php session_start(); 
+if(!isset($_COOKIE['member_login'] || $_COOKIE['member_password'])){
              setcookie ("member_login", "",time()+ (10 * 365 * 24 * 60 * 60));
              setcookie ("member_password","",time()+ (10 * 365 * 24 * 60 * 60)); 
+}
             // setcookie ("member_login",$nickname,time()+ (10 * 365 * 24 * 60 * 60));
             // setcookie ("member_password",$password,time()+ (10 * 365 * 24 * 60 * 60));
 
@@ -25,13 +27,15 @@ var_dump($_SESSION['id']) ?>
           $count = $stmt->rowCount();
           $row   = $stmt->fetch(PDO::FETCH_ASSOC);
           if($count == 1 && !empty($row)) {
-            /******************** Your code ***********************/
+            /******************** mdp ok ***********************/
             $_SESSION['sess_user_id']  = $row['id'];
             $_SESSION['nickname'] = $row['nickname'];
             $_SESSION['password'] = $row['password'];
             echo "hourra!";
             var_dump($_SESSION['password']);
+            // si remember me est coché recup info dans cookie
              if(!empty($_POST["remember"])){
+
              $_SESSION["admin_name"] = $name;
              $_COOKIE['member_login']= $row['nickname'];
              $_COOKIE['member_password']=$row['password'];
@@ -80,12 +84,16 @@ var_dump($_SESSION['id']) ?>
 </head>
 
 <body>
+
+    <!-- Bootstrap dropdown -->
     <div class="dropdown">
+        <!-- btn declancheur du drop down menu -->
         <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
             Sign in
         </a>
         <div class="dropdown-menu">
+            <!-- insertion formulaire -->
             <form class="px-4 py-3" action="" method="POST">
                 <div class="form-group">
                     <label for="nickname">Nickname</label>
