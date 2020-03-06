@@ -1,0 +1,162 @@
+* {
+    
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+    body {
+        background-color: rgb(225, 225, 238);
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.3em 3em 0.3em 3em;
+        background-color: #74b2f8;
+        
+        h1 {
+            color: #edf0f1;
+            a {
+                text-decoration: none;
+                color:  #edf0f1;
+            }
+        }
+
+        li a {
+            color: #edf0f1;
+            text-decoration: none;
+            transition: all 0.6 ease 0s;
+            padding: 0.8em;
+        }
+
+        li a:hover {
+            background-color: #edf0f1;
+            color: rgb(156, 156, 226);
+            padding: 0.8em;
+            border-radius: 0.2em;
+        }
+
+        li {
+            color: #edf0f1;
+            text-decoration: none;
+            list-style: none;
+            display: inline-block;
+            padding: 0em 1em;
+        }
+
+        button {
+            color: #edf0f1;
+            text-decoration: none;
+            border: none;
+            padding: 0.8em;
+            background-color: rgb(156, 156, 226);
+            border-radius: 3em;
+            margin-right: 0.7em;
+        }
+
+        button:hover {
+            background-color: #edf0f1;
+            color: rgb(156, 156, 226);
+            
+        }
+
+        .n-logo {
+
+            cursor: pointer;
+
+        }
+    }
+
+
+
+    // .container {
+    //     width: 60%;
+    //     margin: auto;
+    //     display: flex;
+    //     justify-content: space-around;
+    //     margin-top: 6em;
+    //     background-color: rgb(229, 240, 250);
+
+
+    //     .else {
+    //         margin-right: 1em;
+    //         background-color: rgb(207, 224, 166);
+    //         width: 40%;
+
+    //         h2 {
+    //             padding-left: 1em;
+    //         }
+    //     }
+
+    // }
+
+
+
+
+    .title {
+        padding-bottom: 0.8em;
+    }
+    .signup {
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .title {
+        display: flex;
+        justify-content: center;
+    }
+    
+    #first-name {
+        margin-left: 1.4em;
+    }
+    .gender {
+        text-align: center;
+    }
+    
+    .lastname {
+        margin-left: 1.5em;
+    }
+    .nickname {
+        margin-left: 2em;
+    }
+    
+    #email {
+        margin-left: 3.9em;
+    }
+    #birthday {
+        margin-left: 2.3em;
+    }
+    #pwd {
+        margin-left: 1.8em;
+    }
+    #wrapper {
+        text-align: center;
+    }
+
+
+    #content {
+    
+        width: 30%;
+        margin: auto;
+        padding: 2em;
+        background-color: rgb(229, 240, 250);
+        border: 1px solid rgb(229, 240, 250);;
+        border-radius: 5px;
+        margin-top: 6em;
+        
+    }
+    
+    
+    #content:hover {
+        border: 1px solid rgb(229, 240, 250);
+        box-shadow: 2px 2px 2px rgb(168, 198, 228);    
+    }
+}
+
+
+
+
+
