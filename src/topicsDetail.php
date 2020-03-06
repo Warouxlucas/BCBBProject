@@ -86,7 +86,7 @@
         ?>
 
         <form class="form-group" action="topicsDetail.php?title=<?php echo urlencode($title) ?>&id=<?php echo $idTopics ?>" method="POST">
-            <textarea name="message" id="" cols="30" rows="10" class="message form-control"></textarea>
+            <textarea name="message" id="" cols="30" rows="10" class="message form-control" required></textarea>
             <button type="submit" class="btn btn-outline-success">Envoyé</button>
         </form>
 

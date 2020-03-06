@@ -38,9 +38,9 @@
     <div class="container">
         <form action="topicsCreate.php" method="POST">
             <label for="title">Title</label>
-            <input type="text" class="form-control" name="title">
+            <input type="text" class="form-control" name="title" required>
             <label for="content">Content</label>
-            <textarea name="content" cols="30" rows="10" class="form-control"></textarea>
+            <textarea name="content" cols="30" rows="10" class="form-control" required></textarea>
             <label for="boards">Boards</label>
             <select name="boards" class="form-control">
                 <option value="2">Developpement</option>
