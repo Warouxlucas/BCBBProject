@@ -76,7 +76,7 @@
                     <p>Autor : <?php echo $data['nickname'] ?></p>
 
                     <?php echo substr($data['content'], 0, 100) ?>
-                    <a href="topicsDetail.php?title=<?php echo urlencode($data['title']) ?>">
+                    <a href="topicsDetail.php?title=<?php echo urlencode($data['title']) ?>&id=<?php echo $data['id_topics'] ?>">
                         ...</br>
                         <button class="btn btn-primary">En savoir plus</button>
                     </a>

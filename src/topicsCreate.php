@@ -55,19 +55,19 @@
 
     <?php
 
-    $reqPostTopic = $bdd->prepare('INSERT INTO topics(title, content, boards_id) VALUES (:title, :content, :boards_id)');
+    $reqPostTopic = $bdd->prepare('INSERT INTO topics (title, content, boards_id, users_id) VALUES (:title, :content, :boards_id, :users_id)');
 
     if (isset($_POST['title']) and isset($_POST['content']) and isset($_POST['boards'])) {
         $reqPostTopic->execute(array(
             'title' => $_POST['title'],
             'content' => $_POST['content'],
-            'boards_id' => $_POST['boards']
+            'boards_id' => $_POST['boards'],
+            'users_id' => 1
         ));
-
-        // echo '<meta http-equiv="refresh" content="0">';
-
         $reqPostTopic->closeCursor();
     }
+
+
 
     ?>
 

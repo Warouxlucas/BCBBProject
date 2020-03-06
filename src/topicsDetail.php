@@ -55,13 +55,13 @@
         <?php
     }
 
-    $message = 'SELECT * FROM messages INNER JOIN users ON messages.users_id=users.id INNER JOIN topics ON messages.topics_id=topics.id WHERE title = "' . $title . '"';
+    $message = 'SELECT * FROM messages INNER JOIN users ON messages.users_id=users.id INNER JOIN topics ON messages.topics_id=topics.id_topics WHERE title = "' . $title . '"';
 
     $reqMessage = $bdd->query(
         $message
     );
 
-    $idTopics = '';
+    $idTopics = (int) $_GET['id'];
 
     while ($data = $reqMessage->fetch()) {
         ?>
@@ -77,7 +77,7 @@
                 </div>
             </div>
 
-            <?php $idTopics = $data['id'] ?>
+
 
         <?php
     }
@@ -85,24 +85,32 @@
 
         ?>
 
-        <form class="form-group" action="topicsDetail.php?title=<?php echo urlencode($title) ?>" method="POST">
+        <form class="form-group" action="topicsDetail.php?title=<?php echo urlencode($title) ?>&id=<?php echo $idTopics ?>" method="POST">
             <textarea name="message" id="" cols="30" rows="10" class="message form-control"></textarea>
             <button type="submit" class="btn btn-outline-success">Envoyé</button>
         </form>
 
         <?php
+
         $reqPostMessage = $bdd->prepare('INSERT INTO messages(content_message, users_id, topics_id) VALUES (:content_message, :users_id, :topics_id)');
+
         if (isset($_POST['message'])) {
             $reqPostMessage->execute(array(
                 'content_message' => $_POST['message'],
                 'users_id' => 1,
-                'topics_id' => $idTopics
+                'topics_id' => $_GET['id']
             ));
 
             echo '<meta http-equiv="refresh" content="0">';
-            $_POST['message'] = null;
             $reqPostMessage->closeCursor();
         }
+
+
+
+
+
+
+
 
 
 
