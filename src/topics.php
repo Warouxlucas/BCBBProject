@@ -1,3 +1,11 @@
+<?php
+
+include 'connect/connect-signin.php';
+include 'connect/login-out.php';
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -34,13 +42,9 @@
     $now = new DateTime();
 
 
-    try {
-        $bdd = new PDO('mysql:host=mysql;dbname=bcbb;charset=utf8', 'root', 'root');
-    } catch (Exception $err) {
-        die('Erreur : ' . $err->getMessage());
-    }
 
-    $req = $bdd->query(
+
+    $req = $db->query(
         'SELECT *
          FROM topics 
          INNER JOIN users
