@@ -66,12 +66,12 @@ include 'connect/login-out.php';
             'title' => $_POST['title'],
             'content' => $_POST['content'],
             'boards_id' => $_POST['boards'],
-            'users_id' => 1
+            'users_id' => $_SESSION['sess_user_id']
         ));
         $reqPostTopic->closeCursor();
 
     ?>
-        <div class="alert alert-succes">
+        <div class="alert alert-succes" role="alert">
             Topics bien crée
         </div>
     <?php

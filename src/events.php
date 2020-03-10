@@ -24,7 +24,7 @@ include 'navbar/nav.php';
          FROM topics 
          INNER JOIN users
          ON topics.users_id=users.users_id
-         WHERE boards_id = 4
+         WHERE boards_id = 5
          ORDER BY creation_date DESC 
     '
     );
