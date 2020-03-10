@@ -1,3 +1,7 @@
+<?php
+include 'index.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -25,16 +29,12 @@
 
     $grav_url = "https://www.gravatar.com/avatar/" . md5(strtolower(trim($email))) . "?d=" . urlencode($default) . "&s=" . $size;
 
-    try {
-        $bdd = new PDO('mysql:host=mysql;dbname=bcbb;charset=utf8', 'root', 'root');
-    } catch (Exception $err) {
-        die('Erreur : ' . $err->getMessage());
-    }
+
 
     $title = $_GET['title'];
-    $topic = 'SELECT * FROM topics INNER JOIN users ON topics.users_id=users.id WHERE title = "' . $title . '"';
+    $topic = 'SELECT * FROM topics INNER JOIN users ON topics.users_id=users.users_id WHERE title = "' . $title . '"';
 
-    $req = $bdd->query(
+    $req = $db->query(
         $topic
     );
 
@@ -55,9 +55,9 @@
         <?php
     }
 
-    $message = 'SELECT * FROM messages INNER JOIN users ON messages.users_id=users.id INNER JOIN topics ON messages.topics_id=topics.id_topics WHERE title = "' . $title . '"';
+    $message = 'SELECT * FROM messages INNER JOIN users ON messages.users_id=users.users_id INNER JOIN topics ON messages.topics_id=topics.topics_id WHERE title = "' . $title . '"';
 
-    $reqMessage = $bdd->query(
+    $reqMessage = $db->query(
         $message
     );
 
@@ -92,7 +92,7 @@
 
         <?php
 
-        $reqPostMessage = $bdd->prepare('INSERT INTO messages(content_message, users_id, topics_id) VALUES (:content_message, :users_id, :topics_id)');
+        $reqPostMessage = $db->prepare('INSERT INTO messages(content_message, users_id, topics_id) VALUES (:content_message, :users_id, :topics_id)');
 
         if (isset($_POST['message'])) {
             $reqPostMessage->execute(array(

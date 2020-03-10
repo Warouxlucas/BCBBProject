@@ -1,3 +1,10 @@
+<?php
+
+include 'connect/connect-signin.php';
+include 'connect/login-out.php';
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -25,17 +32,14 @@
 
     $grav_url = "https://www.gravatar.com/avatar/" . md5(strtolower(trim($email))) . "?d=" . urlencode($default) . "&s=" . $size;
 
-    try {
-        $bdd = new PDO('mysql:host=mysql;dbname=bcbb;charset=utf8', 'root', 'root');
-    } catch (Exception $err) {
-        die('Erreur : ' . $err->getMessage());
-    }
-
-
 
     ?>
 
+
     <div class="container">
+        <a href="topics.php">
+            <button class="btn btn-primary">Retour aux topics</button>
+        </a>
         <form action="topicsCreate.php" method="POST">
             <label for="title">Title</label>
             <input type="text" class="form-control" name="title" required>
@@ -55,7 +59,7 @@
 
     <?php
 
-    $reqPostTopic = $bdd->prepare('INSERT INTO topics (title, content, boards_id, users_id) VALUES (:title, :content, :boards_id, :users_id)');
+    $reqPostTopic = $db->prepare('INSERT INTO topics (title, content, boards_id, users_id) VALUES (:title, :content, :boards_id, :users_id)');
 
     if (isset($_POST['title']) and isset($_POST['content']) and isset($_POST['boards'])) {
         $reqPostTopic->execute(array(
@@ -65,10 +69,13 @@
             'users_id' => 1
         ));
         $reqPostTopic->closeCursor();
+
+    ?>
+        <div class="alert alert-succes">
+            Topics bien crée
+        </div>
+    <?php
     }
-
-
-
     ?>
 
 
