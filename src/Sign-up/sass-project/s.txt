@@ -1,0 +1,61 @@
+   .title {
+        padding-bottom: 0.8em;
+    }
+    .signup {
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .title {
+        display: flex;
+        justify-content: center;
+    }
+    
+    #first-name {
+        margin-left: 1.4em;
+    }
+    .gender {
+        text-align: center;
+    }
+    
+    .lastname {
+        margin-left: 1.5em;
+    }
+    .nickname {
+        margin-left: 2em;
+    }
+    
+    #email {
+        margin-left: 3.9em;
+    }
+    #birthday {
+        margin-left: 2.3em;
+    }
+    #pwd {
+        margin-left: 1.8em;
+    }
+    #wrapper {
+        text-align: center;
+    }
+
+
+    #content {
+    
+        width: 30%;
+        margin: auto;
+        padding: 2em;
+        background-color: rgb(229, 240, 250);
+        border: 1px solid rgb(229, 240, 250);;
+        border-radius: 5px;
+        margin-top: 6em;
+        
+    }
+    
+    
+    #content:hover {
+        border: 1px solid rgb(229, 240, 250);
+        box-shadow: 2px 2px 2px rgb(168, 198, 228);    
+    }
+}
