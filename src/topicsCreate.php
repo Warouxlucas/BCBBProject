@@ -1,3 +1,10 @@
+<?php
+
+include 'connect/connect-signin.php';
+include 'connect/login-out.php';
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -42,7 +49,11 @@
 
     ?>
 
+
     <div class="container">
+        <a href="topics.php">
+            <button class="btn btn-primary">Retour aux topics</button>
+        </a>
         <form action="topicsCreate.php" method="POST">
             <label for="title">Title</label>
             <input type="text" class="form-control" name="title" required>
@@ -62,20 +73,23 @@
 
     <?php
 
-    $reqPostTopic = $bdd->prepare('INSERT INTO topics (title, content, boards_id, users_id) VALUES (:title, :content, :boards_id, :users_id)');
+    $reqPostTopic = $db->prepare('INSERT INTO topics (title, content, boards_id, users_id) VALUES (:title, :content, :boards_id, :users_id)');
 
     if (isset($_POST['title']) and isset($_POST['content']) and isset($_POST['boards'])) {
         $reqPostTopic->execute(array(
             'title' => $_POST['title'],
             'content' => $_POST['content'],
             'boards_id' => $_POST['boards'],
-            'users_id' => 1
+            'users_id' => $_SESSION['sess_user_id']
         ));
         $reqPostTopic->closeCursor();
+
+    ?>
+    <div class="alert alert-succes" role="alert">
+        Topics bien crée
+    </div>
+    <?php
     }
-
-
-
     ?>
 
 

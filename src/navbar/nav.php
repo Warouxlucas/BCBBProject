@@ -14,6 +14,7 @@ include 'connect/login-out.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>General</title>
 
+    <link rel="stylesheet" href="../css/topics.css">
 
     <!-- new log in  -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -98,59 +99,3 @@ include 'connect/login-out.php';
             <?php } ?>
         </div>
     </header>
-
-
-    <!-- New slider -->
-    <div class="slider">
-        <div class="sliderchild">
-            <div class="imagesli">
-                <a href="last.php">
-                    <div class="slide-content">
-                        <h1 class="first-slide-h1">General</h1>
-                        <h2 class="first-slide-h2">Last article</h2>
-                        <p class="first-silde-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio at ea distinctio aperiam aspernatur! At commodi quaerat reprehenderit? Rerum inventore non ratione.!</p>
-                    </div>
-                </a>
-            </div>
-            <div class="imagesli">
-                <div class="slide-content">
-                    <h1 class="second-slide-h1">Development</h1>
-                    <h2 class="second-slide-h2">Last article</h2>
-                    <p class="second-silde-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio at ea distinctio aperiam aspernatur! At commodi quaerat reprehenderit? Rerum inventore non ratione.!</p>
-                </div>
-            </div>
-            <div class="imagesli">
-                <div class="slide-content">
-                    <h1 class="third-slide-h1">Small talk</h1>
-                    <h2 class="third-slide-h2">Last article</h2>
-                    <p class="third-silde-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio at ea distinctio aperiam aspernatur! At commodi quaerat reprehenderit? Rerum inventore non ratione.!</p>
-                </div>
-            </div>
-            <div class="imagesli">
-                <div class="slide-content">
-                    <h1 class="fourth-slide-h1">Events</h1>
-                    <h2 class="fourth-slide-h2">Last article</h2>
-                    <p class="fourth-silde-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio at ea distinctio aperiam aspernatur! At commodi quaerat reprehenderit? Rerum inventore non ratione.!</p>
-                </div>
-            </div>
-            <div class="imagesli">
-                <div class="slide-content">
-                    <h1 class="first-slide-h1">General</h1>
-                    <h2 class="first-slide-h2">Last article</h2>
-                    <p class="first-silde-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio at ea distinctio aperiam aspernatur! At commodi quaerat reprehenderit? Rerum inventore non ratione.!</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-
-
-
-</body>
-
-
-
-
-</html>
