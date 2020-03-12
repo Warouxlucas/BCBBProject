@@ -59,6 +59,7 @@ $stmp= null;
     <script src="./script.js"></script>
     <link rel="stylesheet" href="nav/style.css">
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="footer/footer-style/footer.css">
 
 </head>
 
@@ -248,9 +249,11 @@ $stmp= null;
         ?>
     </div>
 
+    <!-- <?php // require 'body/body.php'; ?> -->
+
 
 </body>
-
+<?php require 'footer/footer.php'; ?>
 
 
 
