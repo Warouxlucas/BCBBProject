@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 include 'connect/connect-signin.php';
 include 'connect/login-out.php';
@@ -68,7 +68,7 @@ $stmp= null;
         <h1 class="n-logo">The Weaver</h1>
         <nav>
             <ul class="nav-links">
-                <li><a href="">General</a></li>
+                <li><a href="general.php">General</a></li>
                 <li><a href="development.php">Development</a></li>
                 <li><a href="smalltalk.php">Smalltalk</a></li>
                 <li><a href="events.php">Events</a></li>
