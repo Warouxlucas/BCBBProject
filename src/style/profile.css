@@ -1,0 +1,46 @@
+* .body {
+  background-color: #282e34;
+}
+
+* .body .profile {
+  margin-top: 2em;
+}
+
+* .body .j-profile {
+  color: white;
+  padding: 0;
+}
+
+* .body .j-profile h3 {
+  margin-left: 0.5em;
+  padding: 0;
+}
+
+* .body .j-profile img {
+  margin: 1em;
+  margin-bottom: 2em;
+}
+
+* .body .j-profile table {
+  margin-left: 1em;
+}
+
+* .body .j-profile table tr td {
+  padding-bottom: 2em;
+}
+
+* .body .j-profile button {
+  margin-left: 1em;
+  border: none;
+  background-color: skyblue;
+  padding: 0.4em;
+  border-radius: 0.4em;
+  -webkit-transition: ease-in-out 0.2s;
+  transition: ease-in-out 0.2s;
+}
+
+* .body .j-profile button:hover {
+  color: #eee3e3;
+  background-color: #3db4e4;
+}
+/*# sourceMappingURL=profile.css.map */

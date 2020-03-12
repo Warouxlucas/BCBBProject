@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="footer-style/footer.css">
     <title>Document</title>
 </head>
-<body>
+<body> -->
     
 
     <footer>
@@ -33,7 +33,7 @@
         </div>
         <p> &copy; <small>The Weaver 2020 Liége </small> </p>
     </footer>
-        
+<!--         
     
 </body>
-</html>
+</html> -->

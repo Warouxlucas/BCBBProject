@@ -2,7 +2,6 @@
 
 include 'connect/connect-signin.php';
 include 'connect/login-out.php';
-
 ?>
 
 
@@ -144,8 +143,8 @@ include 'connect/login-out.php';
 
 
 
-
-
+<?php require 'body/body.php'; ?>
+<?php require 'footer/footer.php'; ?>
 
 </body>
 
