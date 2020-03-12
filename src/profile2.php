@@ -1,5 +1,5 @@
 <?php
-        include("connect.php");
+        include("connect/connect.php");
 
 if(isset($_POST['submit']))
 {
