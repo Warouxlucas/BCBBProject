@@ -1,6 +1,6 @@
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -17,11 +17,11 @@
   position: fixed;
   top: 0;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   background-color: rgba(92, 119, 150, 0.9);
   z-index: 1;
   width: 100%;
@@ -35,11 +35,17 @@
   font-weight: bolder;
 }
 
+* header h1 a {
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+
 * header nav {
   display: fixed;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 * header nav li a {
@@ -203,7 +209,7 @@
   height: 35em;
   width: 500%;
   -webkit-animation: newslider infinite 25s ease-in-out 5s;
-          animation: newslider infinite 25s ease-in-out 5s;
+  animation: newslider infinite 25s ease-in-out 5s;
 }
 
 * .slider .sliderchild a {
@@ -323,24 +329,31 @@
   12.5% {
     margin-left: -100%;
   }
+
   25% {
     margin-left: -100%;
   }
+
   37.5% {
     margin-left: -200%;
   }
+
   50% {
     margin-left: -200%;
   }
+
   62.5% {
     margin-left: -300%;
   }
+
   75% {
     margin-left: -300%;
   }
+
   87.5% {
     margin-left: -400%;
   }
+
   100% {
     margin-left: -400%;
   }
@@ -350,24 +363,31 @@
   12.5% {
     margin-left: -100%;
   }
+
   25% {
     margin-left: -100%;
   }
+
   37.5% {
     margin-left: -200%;
   }
+
   50% {
     margin-left: -200%;
   }
+
   62.5% {
     margin-left: -300%;
   }
+
   75% {
     margin-left: -300%;
   }
+
   87.5% {
     margin-left: -400%;
   }
+
   100% {
     margin-left: -400%;
   }
@@ -388,8 +408,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 * footer li {
@@ -408,4 +428,5 @@
 * footer span {
   width: 10em;
 }
+
 /*# sourceMappingURL=style.css.map */

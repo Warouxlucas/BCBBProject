@@ -1,13 +1,14 @@
 * {
-    
+
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 
     body {
-        background-color:#e1e1ee ;
+        background-color: #e1e1ee;
         height: 2000px;
     }
+
     // navbar start
 
     header {
@@ -21,17 +22,25 @@
         width: 100%;
         transition: all 0.3s ease-in-out;
         padding: 0.8em 3em 0.2em 3em;
-        
-        
+
+
         h1 {
             color: #edf0f1;
             font-weight: bolder;
+
+            a {
+                font-weight: bold;
+                text-decoration: none;
+                color: white;
+
+            }
         }
-        
+
         nav {
             display: fixed;
             align-items: center;
         }
+
         nav li a {
             color: #edf0f1;
             text-decoration: none;
@@ -67,7 +76,7 @@
         .signin-btn:hover {
             background-color: #edf0f1;
             color: rgb(156, 156, 226);
-            
+
         }
 
         .n-logo {
@@ -88,23 +97,24 @@
                 border: none;
                 background-color: rgb(156, 156, 226);
                 border-radius: 3em;
-              
+
             }
 
             img {
                 width: 0.6em;
             }
         }
+
         .expand:hover {
             background-color: #edf0f1;
             color: rgb(156, 156, 226);
 
             button {
                 background-color: #edf0f1;
-                color: rgb(156, 156, 226); 
+                color: rgb(156, 156, 226);
             }
-            
-        } 
+
+        }
 
         // After log in
 
@@ -125,7 +135,7 @@
             margin-bottom: 0.6em;
 
         }
-        
+
         .profile {
             display: inline-block;
             text-decoration: none;
@@ -138,17 +148,18 @@
                 height: 1em;
             }
         }
+
         .profile:hover {
             background-color: rgb(238, 96, 151);
             color: #edf0f1;
-            
+
         }
 
         .logout {
             display: inline-block;
             color: #edf0f1;
             text-decoration: none;
-            
+
             border: none;
             padding: 0.8em;
             border-radius: 0.2em;
@@ -157,12 +168,13 @@
                 height: 1em;
             }
 
-            
+
         }
+
         .logout:hover {
             background-color: rgb(238, 96, 151);
             color: #edf0f1;
-            
+
         }
 
         .logout-button {
@@ -178,7 +190,7 @@
 
 
 
-        .dropdown{
+        .dropdown {
             display: inline-block;
         }
 
@@ -201,10 +213,12 @@
 
         // Nav bar before shrink
     }
+
     .header {
         padding: 3em 3em 1em 3em;
         background-color: rgba(92, 119, 150, 0.6);
     }
+
     // Nav bar end 
 
     //  slider
@@ -218,7 +232,7 @@
             height: 35em;
             width: 500%;
             animation: newslider infinite 25s ease-in-out 5s;
-            
+
             a {
                 text-decoration: none;
             }
@@ -228,8 +242,9 @@
                 width: 20%;
                 float: left;
             }
+
             .slide-content {
-                background-color: rgba(2, 1, 1,0.4);
+                background-color: rgba(2, 1, 1, 0.4);
                 width: 50%;
                 margin: auto;
                 border-radius: 1em;
@@ -256,10 +271,10 @@
                 margin-top: 1em;
             }
 
-            .first-silde-p{
+            .first-silde-p {
                 margin-top: 1em;
                 text-align: center;
-                
+
             }
 
             // SECOND IMAGE AND TEXT
@@ -281,10 +296,10 @@
                 margin-top: 1em;
             }
 
-            .second-silde-p{
+            .second-silde-p {
                 margin-top: 1em;
                 text-align: center;
-                
+
             }
 
             // THIRD IMAGE AND TEXT
@@ -295,6 +310,7 @@
                 background-size: cover;
                 background-position: center center;
             }
+
             .third-slide-h1 {
                 text-align: center;
                 margin-top: 5em;
@@ -305,12 +321,13 @@
                 margin-top: 1em;
             }
 
-            .third-silde-p{
+            .third-silde-p {
                 margin-top: 1em;
                 text-align: center;
-                
+
             }
-                // FOURTH ILMAGE AND TEXT
+
+            // FOURTH ILMAGE AND TEXT
 
             .imagesli:nth-child(4) {
                 background-image: url(../img/events.jpg);
@@ -329,10 +346,10 @@
                 margin-top: 1em;
             }
 
-            .fourth-silde-p{
+            .fourth-silde-p {
                 margin-top: 1em;
                 text-align: center;
-                
+
             }
 
             .imagesli:nth-child(5) {
@@ -345,27 +362,34 @@
         }
 
         @keyframes newslider {
-            12.5%{
+            12.5% {
                 margin-left: -100%;
             }
+
             25% {
                 margin-left: -100%;
             }
-            37.5%{
+
+            37.5% {
                 margin-left: -200%;
             }
-            50%{
+
+            50% {
                 margin-left: -200%;
             }
-            62.5%{
+
+            62.5% {
                 margin-left: -300%;
             }
-            75%{
+
+            75% {
                 margin-left: -300%;
             }
+
             87.5% {
                 margin-left: -400%;
             }
+
             100% {
                 margin-left: -400%;
             }
@@ -382,31 +406,29 @@
         padding-bottom: 2em;
         padding-left: 1em;
         padding-right: 1em;
+
         .footer {
             display: flex;
             justify-content: space-between;
         }
-    
+
         li {
             text-decoration: none;
             display: inline-block;
             padding: 0em 1em;
-            padding-top:1em;
-    
+            padding-top: 1em;
+
         }
-    
+
         a {
             text-decoration: none;
             display: inline-block;
             color: white;
         }
+
         span {
             width: 10em;
         }
     }
 
 }
-
-
-  
-
