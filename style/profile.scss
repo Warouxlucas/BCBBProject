@@ -1,0 +1,50 @@
+* {
+
+
+    .body {
+        background-color: #414a53;
+        
+        
+        
+        
+        .j-profile {
+            color: white;
+            padding: 0;
+            margin-top: 7em;
+            img {
+                
+                margin: 1em;
+                margin-bottom: 2em;
+            }
+
+            table {
+                margin-left: 1em ;
+                color: white;
+
+                tr {
+
+                    td {
+                        padding-bottom: 1.9em;
+                    }
+                }
+            }
+
+            button {
+                margin-left: 1em;
+                border: none;
+                background-color: skyblue;
+                padding: 0.4em;
+                border-radius: 0.4em;
+                transition: ease-in-out 0.2s ;
+            }
+
+            button:hover {
+                color: rgb(238, 227, 227);
+                background-color: rgb(61, 180, 228);
+                
+            }
+
+
+        }
+    }
+}

@@ -1,0 +1,22 @@
+* .container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+* .container .card-header {
+  background-color: rgba(92, 119, 150, 0.9);
+}
+
+* .container a {
+  color: whitesmoke;
+}
+
+* .container .card {
+  margin-bottom: 25px;
+}
+
+* .container .card a {
+  background-color: rgba(92, 119, 150, 0.6);
+  border: none;
+}
+/*# sourceMappingURL=home.css.map */
