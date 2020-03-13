@@ -17,7 +17,8 @@
       $gender = $_POST['gender'];
       $birthday = $_POST['birthday'];
       $email = $_POST['email'];
-      $password = $_POST['pwd'];
+      $password = hash('sha512',$_POST['pwd']);
+      
 
       $pdoQuery = "INSERT INTO users(firstname, lastname, nickname, male, birthday, email, pwd) VALUES (:firstname,:lastname,:nickname,:male,:birthday,:email,:pwd)";
       
@@ -37,4 +38,3 @@
       
       }
 ?>
-
