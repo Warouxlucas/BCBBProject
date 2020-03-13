@@ -40,7 +40,8 @@ include 'connect/login-out.php';
     $grav_url = "https://www.gravatar.com/avatar/" . md5(strtolower(trim($email))) . "?d=" . urlencode($default) . "&s=" . $size;
 
     try {
-        $bdd = new PDO('mysql:host=mysql;dbname=BCBB;charset=utf8', 'root', 'root');
+        $bdd = new PDO('mysql:host=g4yltwdo6z0izlm6.chr7pe7iynqr.eu-west-1.rds.amazonaws.com;dbname=svb7vo33swlkw6jp;charset=utf8mb4',
+        'iicuafj3oduynv19','uqdhhz7xw60z5p06');
     } catch (Exception $err) {
         die('Erreur : ' . $err->getMessage());
     }
