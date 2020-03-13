@@ -243,18 +243,17 @@ $stmp= null;
                                         
                                 echo "</ul>".
                                 "</li>".
-                                "<a href='".$boardsname.".php' class='btn btn-primary'>See more</a>";
+                                "<a href='".$boardsname.".php' class='btn btn-primary'>See more</a>".
+                                "</div>";
                 };
                 echo "</ul>";
         ?>
     </div>
-
+    </div>
     <!-- <?php // require 'body/body.php'; ?> -->
-
 
 </body>
 <?php require 'footer/footer.php'; ?>
-
 
 
 </html>

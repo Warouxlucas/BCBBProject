@@ -2,7 +2,9 @@
 
 
     .body {
-        background-color: #282e34;
+        background-color: #414a53;
+        
+        
         
 
         .profile {
@@ -12,24 +14,21 @@
         .j-profile {
             color: white;
             padding: 0;
-
-            h3 {
-                margin-left: 0.5em;
-                padding: 0;
-            }
-
+            margin-top: 7em;
             img {
+                
                 margin: 1em;
                 margin-bottom: 2em;
             }
 
             table {
                 margin-left: 1em ;
+                color: white;
 
                 tr {
 
                     td {
-                        padding-bottom: 2em;
+                        padding-bottom: 1.9em;
                     }
                 }
             }
@@ -41,11 +40,13 @@
                 padding: 0.4em;
                 border-radius: 0.4em;
                 transition: ease-in-out 0.2s ;
+                margin-bottom: 2em;
             }
 
             button:hover {
                 color: rgb(238, 227, 227);
                 background-color: rgb(61, 180, 228);
+                
             }
 
 

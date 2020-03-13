@@ -4,14 +4,14 @@
 include("connect/connect.php");    
 $userid=$_SESSION['sess_user_id'];
 $sql = "SELECT * FROM users WHERE users_id=$userid";
-var_dump($userid);
+//var_dump($userid);
 $stmp = $db->prepare($sql);
 $stmp->execute();
 
 $user = $stmp->fetchAll(PDO::FETCH_OBJ);
 $stmp->closeCursor();
 $stmp= null; 
-var_dump($user);
+//var_dump($user);
 ?>
 
 <!DOCTYPE html>
@@ -30,11 +30,11 @@ var_dump($user);
             <?php include 'navbar/nav.php'?>
 
             <!-- <a href="index.php">Home</a> | <?php //echo $user[0]->firstname;echo " "; echo $user[0]->lastname; ?>'s Profile         -->
-            <h3>Personal Information <?php  //  $visitor = $_SESSION['username'];
+            <!-- <h3>Personal Information <?php  //  $visitor = $_SESSION['username'];
                     // if ($user == $visitor)
             { ?> <?php
             }
-                    ?> </h3>
+            ?> </h3> -->
             <img src="https://www.gravatar.com/avatar/<?php echo md5( strtolower( trim( $user[0]->email ) ) ) ?>" />
             <table>
 
