@@ -15,16 +15,16 @@
       $firstname = $_POST['firstname'];
       $lastname = $_POST['lastname'];
       $nickename = $_POST['nickname'];
-      $gender = $_POST['gender'];
+      //$gender = $_POST['gender'];
       $birthday = $_POST['birthday'];
       $email = $_POST['email'];
       $password = $_POST['pwd'];
 
-      $pdoQuery = "INSERT INTO users(firstname, lastname, nickname, male, birthday, email, pwd) VALUES (:firstname,:lastname,:nickname,:male,:birthday,:email,:pwd)";
+      $pdoQuery = "INSERT INTO users(firstname, lastname, nickname, birthday, email, pwd) VALUES (:firstname,:lastname,:nickname,:birthday,:email,:pwd)";
       
       $pdoQuery_run = $db->prepare($pdoQuery);
-      $pdoQuery_exec = $pdoQuery_run->execute(array(":firstname"=>$firstname, ":lastname"=>$lastname, ":nickname"=>$nickename, ":male"=>$gender, ":birthday"=>$birthday, ":email"=>$email, ":pwd"=>$password));
-      
+      $pdoQuery_exec = $pdoQuery_run->execute(array(":firstname"=>$firstname, ":lastname"=>$lastname, ":nickname"=>$nickename, ":birthday"=>$birthday, ":email"=>$email, ":pwd"=>$password));
+      //":male"=>$gender,:malemale,
       var_dump(($pdoQuery_run));
 
       if ($pdoQuery_exec) {

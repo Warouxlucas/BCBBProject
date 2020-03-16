@@ -14,7 +14,7 @@
       $firstname = $_POST['firstname'];
       $lastname = $_POST['lastname'];
       $nickename = $_POST['nickname'];
-      $gender = $_POST['male'];
+      //$gender = $_POST['male'];
       $birthday = $_POST['birthday'];
       $email = $_POST['email'];
       $password = $_POST['pwd'];

@@ -61,8 +61,8 @@ $stmp= null;
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="style/footer.css">
     <link rel="stylesheet" href="style/topics.css">
-    
-    
+
+
 
 </head>
 
@@ -225,7 +225,7 @@ $stmp= null;
                         echo 
                                 "<div class='card'>
                                     <div class='card-header'><a href='#'>".
-                                $boardsname. 
+                                strtolower( trim($boardsname)).
                                 "</a></div>". 
                                 "<div class='col'>". 
                                 "</div>".
@@ -248,7 +248,7 @@ $stmp= null;
                                         
                                 echo "</ul>".
                                 "</li>".
-                                "<a href='".$boardsname.".php' class='btn btn-primary'>See more</a>".
+                                "<a href='".strtolower( trim($boardsname)).".php' class='btn btn-primary'>See more</a>".
                                 "</div>";
                 };
                 echo "</ul>";

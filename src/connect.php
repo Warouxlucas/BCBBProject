@@ -19,16 +19,17 @@
       $email = $_POST['email'];
       $password = $_POST['pwd'];
 
-      $pdoQuery = "INSERT INTO users(firstname, lastname, nickname, male, birthday, email, pwd) VALUES (:firstname,:lastname,:nickname,:male,:birthday,:email,:pwd)";
+      $pdoQuery = "INSERT INTO users(firstname, lastname, nickname, birthday, email, pwd) VALUES (:firstname,:lastname,:nickname,:birthday,:email,:pwd)";
       
       $pdoQuery_run = $db->prepare($pdoQuery);
-      $pdoQuery_exec = $pdoQuery_run->execute(array(":firstname"=>$firstname, ":lastname"=>$lastname, ":nickname"=>$nickename, ":male"=>$gender, ":birthday"=>$birthday, ":email"=>$email, ":pwd"=>$password));
+      $pdoQuery_exec = $pdoQuery_run->execute(array(":firstname"=>$firstname, ":lastname"=>$lastname, ":nickname"=>$nickename, ":birthday"=>$birthday, ":email"=>$email, ":pwd"=>$password));
       
-      //var_dump(($pdoQuery_run));
+      //var_dump(($pdoQuery_run));":male"=>$gender, male,:male
       var_dump($password);
       var_dump($lastname);
       var_dump($nickename);
       var_dump($gender);
+      var_dump($_POST['male']);
       var_dump($email);
       var_dump($birthday);
 
