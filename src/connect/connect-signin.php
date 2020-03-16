@@ -8,8 +8,7 @@ session_start();
 //   }
 
 try {
-  $db = new PDO('mysql:host=g4yltwdo6z0izlm6.chr7pe7iynqr.eu-west-1.rds.amazonaws.com;dbname=svb7vo33swlkw6jp;charset=utf8mb4',
-  'iicuafj3oduynv19','uqdhhz7xw60z5p06');
+  $db = new PDO('mysql:host=mysql;dbname=BCBB;charset=utf8mb4','root','root');
   //$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
   //$db->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);  
 } catch (PDOException $e) {
