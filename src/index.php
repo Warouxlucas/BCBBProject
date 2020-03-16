@@ -224,7 +224,7 @@ $stmp= null;
                         $boardsname= $board->name;
                         echo 
                                 "<div class='card'>
-                                    <div class='card-header'><a href='".strtolower( trim( $boardsname))."'>".
+                                    <div class='card-header'><a href='".strtolower( trim( $boardsname)).".php'>".
                                 $boardsname. 
                                 "</a></div>". 
                                 "<div class='col'>". 
