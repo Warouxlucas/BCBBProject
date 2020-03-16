@@ -1,20 +1,21 @@
 <?php 
     try {
       $db = new PDO('mysql:host=mysql;dbname=BCBB;charset=utf8mb4', 'root','root');
+      
       //$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
       //$db->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);  
     } catch (PDOException $e) {
       echo "Connection failed : ". $e->getMessage();
     }
 
-    // Sign Up
+    
     
     if(isset($_POST['singupsubmit']))
     {
       $firstname = $_POST['firstname'];
       $lastname = $_POST['lastname'];
       $nickename = $_POST['nickname'];
-      $gender = $_POST['male'];
+      $gender = $_POST['gender'];
       $birthday = $_POST['birthday'];
       $email = $_POST['email'];
       $password = $_POST['pwd'];
@@ -32,6 +33,8 @@
       else {
         echo '<script> alert("Data not inserted") </script>';
       }
+
+      
       
       }
 ?>

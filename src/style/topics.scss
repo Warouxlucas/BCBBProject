@@ -1,0 +1,81 @@
+
+
+body {
+  background-color: #282e34;
+
+  .card {
+    background-color: lightgray;
+    margin-bottom: 2em;
+    padding: 2em;
+    
+    a {
+      color: #666;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a:hover {
+      color: white;
+    }
+    
+    .btn-primary {
+      background-color:  rgb(92, 117, 143);
+      border: none;
+      color: white;
+      font-weight: 400;
+    }
+  
+    .btn-primary:hover {
+      background-color:  rgb(61, 95, 131);
+      border: none;
+    }  
+  }
+
+  .card-header {
+    background-color: lightgray;
+  }
+
+ 
+  .container {
+    margin-top: 10em;
+    min-height: 60vh;
+    color: white;
+
+    h1 {
+      color: #666;
+    }
+
+    .list-group-item {
+      background-color: lightgray;
+      color: #666;
+    }
+
+    button {
+      border: none;
+      background-color: rgb(92, 117, 143);
+      color: white;
+    }
+
+    button:hover {
+      background-color: rgb(61, 95, 131);
+    }
+  
+
+    .media-body {
+      background-color: lightslategray;
+      color: white;
+      padding: 2em;
+      margin-bottom: 1em;
+      border-radius: 0.2em;
+    }
+
+    .mr-3 {
+      margin-right: 1em;
+    }
+
+    .mt-3 {
+      img {
+        margin-right: 1em;
+      }
+    }
+  }
+}

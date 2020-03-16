@@ -25,9 +25,13 @@ $stmp= null;
 </head>
 
 <body class="body">
+    <div>
+    <?php include 'nav.php'?>
+    </div>
+
     <div class="profile">
         <div class="j-profile">
-            <?php include 'navbar/nav.php'?>
+            
 
             <!-- <a href="index.php">Home</a> | <?php //echo $user[0]->firstname;echo " "; echo $user[0]->lastname; ?>'s Profile         -->
             <!-- <h3>Personal Information <?php  //  $visitor = $_SESSION['username'];
@@ -71,7 +75,7 @@ $stmp= null;
 
 
     </div>
-    <?php include('footer/footer.php') ?>
+    <?php include('footer.php') ?>
 </body>
 
 </html>

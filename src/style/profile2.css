@@ -1,0 +1,51 @@
+.p-container {
+  margin-top: 8em;
+  margin-left: 1em;
+  color: white;
+}
+
+.p-container a {
+  color: white;
+}
+
+.p-container h3 {
+  color: white;
+}
+
+.p-container button {
+  border: none;
+  background-color: #5c758f;
+  padding: 0.3em;
+  color: white;
+  border-radius: 0.2em;
+}
+
+.p-container button:hover {
+  background-color: #3d5f83;
+  border: none;
+}
+
+.p-container input {
+  margin-left: 4em;
+  margin-top: 1em;
+}
+
+.p-container .v-btn {
+  margin-left: 0em;
+  margin-top: 0.2em;
+  border: none;
+  background-color: #5c758f;
+  padding: 0.3em;
+  color: white;
+  border-radius: 0.2em;
+}
+
+.p-container .v-btn:hover {
+  background-color: #3d5f83;
+  border: none;
+}
+
+.p-container table tr .p-email {
+  margin-left: 4em;
+}
+/*# sourceMappingURL=profile2.css.map */

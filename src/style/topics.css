@@ -1,0 +1,77 @@
+body {
+  background-color: #282e34;
+}
+
+body .card {
+  background-color: lightgray;
+  margin-bottom: 2em;
+  padding: 2em;
+}
+
+body .card a {
+  color: #666;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+body .card a:hover {
+  color: white;
+}
+
+body .card .btn-primary {
+  background-color: #5c758f;
+  border: none;
+  color: white;
+  font-weight: 400;
+}
+
+body .card .btn-primary:hover {
+  background-color: #3d5f83;
+  border: none;
+}
+
+body .card-header {
+  background-color: lightgray;
+}
+
+body .container {
+  margin-top: 10em;
+  min-height: 60vh;
+  color: white;
+}
+
+body .container h1 {
+  color: #666;
+}
+
+body .container .list-group-item {
+  background-color: lightgray;
+  color: #666;
+}
+
+body .container button {
+  border: none;
+  background-color: #5c758f;
+  color: white;
+}
+
+body .container button:hover {
+  background-color: #3d5f83;
+}
+
+body .container .media-body {
+  background-color: lightslategray;
+  color: white;
+  padding: 2em;
+  margin-bottom: 1em;
+  border-radius: 0.2em;
+}
+
+body .container .mr-3 {
+  margin-right: 1em;
+}
+
+body .container .mt-3 img {
+  margin-right: 1em;
+}
+/*# sourceMappingURL=topics.css.map */

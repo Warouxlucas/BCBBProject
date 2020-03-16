@@ -1,0 +1,57 @@
+.p-container {
+    margin-top: 8em;
+    margin-left: 1em;
+    color: white;
+
+
+    a {
+        color: white;
+    }
+
+    h3 {
+        color: white ;
+    } 
+
+    button {
+        border: none;
+        background-color: rgb(92, 117, 143);
+        padding: 0.3em;
+        color: white;
+        border-radius: 0.2em;
+    }
+
+    button:hover {
+        background-color:  rgb(61, 95, 131);
+        border: none;
+    }
+
+    input {
+        margin-left: 4em;
+        margin-top: 1em;
+    }
+
+    .v-btn  {
+        margin-left: 0em;
+        margin-top: 0.2em;
+        border: none;
+        background-color: rgb(92, 117, 143);
+        padding: 0.3em;
+        color: white;
+        border-radius: 0.2em;
+    }
+
+    .v-btn:hover {
+        background-color:  rgb(61, 95, 131);
+        border: none;
+    }
+
+    table {
+        tr {
+            .p-email {
+                margin-left: 4em;
+            }
+        }
+    }
+   
+}
+

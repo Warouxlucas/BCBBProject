@@ -57,13 +57,18 @@ $stmp= null;
     </script>
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
     <script src="./script.js"></script>
-    <link rel="stylesheet" href="nav/style.css">
+    <link rel="stylesheet" href="style/nav.css">
     <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="footer/footer-style/footer.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="style/topics.css">
+
+
 
 </head>
 
 <body>
+
+
     <header class="header">
 
         <h1 class="n-logo">The Weaver</h1>
@@ -126,7 +131,7 @@ $stmp= null;
                         <input type="submit" name="submitBtnLogin" id="submitBtnLogin" value="login!">
                     </form>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="sign-up/sign-up.php">New around here? Sign up</a>
+                    <a class="dropdown-item" href="sign-up.php">New around here? Sign up</a>
                 </div>
 
             </div>
@@ -243,7 +248,7 @@ $stmp= null;
                                         
                                 echo "</ul>".
                                 "</li>".
-                                "<a href='".$boardsname.".php' class='btn btn-primary'>See more</a>".
+                                "<a href='".strtolower( trim( $boardsname)).".php' class='btn btn-primary'>See more</a>".
                                 "</div>";
                 };
                 echo "</ul>";
@@ -253,7 +258,7 @@ $stmp= null;
     <!-- <?php // require 'body/body.php'; ?> -->
 
 </body>
-<?php require 'footer/footer.php'; ?>
+<?php require 'footer.php'; ?>
 
 
 </html>
