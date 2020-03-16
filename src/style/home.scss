@@ -1,0 +1,25 @@
+* {
+
+    .container {
+        margin-top: 50px;
+        margin-bottom: 50px;
+
+        .card-header {
+            background-color: rgba(92, 119, 150, 0.9);
+        }
+
+        a {
+            color: whitesmoke;
+        }
+
+        .card {
+            margin-bottom: 25px;
+
+            a {
+                background-color: rgba(92, 119, 150, 0.6);
+                border: none;
+            }
+        }
+    }
+
+}

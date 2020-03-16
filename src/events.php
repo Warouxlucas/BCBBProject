@@ -1,6 +1,6 @@
 <?php
 
-include 'navbar/nav.php';
+include 'nav.php';
 
 
 ?>
@@ -64,7 +64,8 @@ include 'navbar/nav.php';
                 </li>
             </ul>
         </div>
-    <?php
+                </div>
+                    <?php
     }
 
     $req->closeCursor();
@@ -72,5 +73,6 @@ include 'navbar/nav.php';
     ?>
 
     </body>
+    <?php include 'footer.php' ?>
 
     </html>

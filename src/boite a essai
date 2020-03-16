@@ -1,0 +1,91 @@
+
+        <!DOCTYPE html>
+<html>
+  <head>
+    <title>Cours Complet Bootstrap 4</title>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Navigation</h1>
+      <div class="row">
+              <?php foreach($boards as $board){
+        echo '<div class="dropdown">'.
+        '<button class="btn btn-secondary dropdown-toggle" type="button" id="deroulantb" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">'.$boardsname.'</button>'.
+        '<div class="dropdown-menu" aria-labelledby="deroulantb">';
+        $i=0;
+                                        foreach($topics as $topic){
+                                        $topicname=$topic->name;
+                                        // var_dump($boardsname);
+                                        
+                                                if($boardsname == $topicname && $i<3){
+                                                        $i++;
+                                                echo '<a class="dropdown-item" href="#">'.$topic->title.'</a>';
+?>
+                                                }
+                                        }
+
+            
+            
+          </div>
+        </div>
+        
+
+
+
+
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <meta http-equiv="X-UA-Compatible" content="ie=edge">
+                <title>Document</title>
+                <link rel="stylesheet" href="css/style.css">
+                <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        </head>
+        <body>
+        <main>
+        <!-- boucle on boards to show them all -->
+        <?php 
+        echo "<ul class='boards_list_container'>";
+                foreach($boards as $board){
+                        $boardsname= $board->name;
+                        echo 
+                                "<li><div class='boards_list_title'><a href='#'>".                                
+                                $boardsname. 
+                                "</a></div>". 
+                                "<div class='boards_list_author'>". 
+                                "</div>".
+                                "<ul>";
+                                $i=0;
+                                        foreach($topics as $topic){
+                                        $topicname=$topic->name;
+                                        // var_dump($boardsname);
+                                        
+                                                if($boardsname == $topicname && $i<3){
+                                                        $i++;
+                                                echo  "<li><div class='topics_list_title'>".                         
+                                $topic->title.
+                                "</div>". 
+                                "<div class='topics_list_author'>". 
+                                $topic->nickname.
+                                "</div>".
+                                "</li>";}
+                        }
+                                        
+                                echo "</ul>".
+                                "</li>";
+                                
+                };
+                echo "</ul>";
+        ?>
+        
+
+        </main>
+
+                
+
+        </body>
+        </html>

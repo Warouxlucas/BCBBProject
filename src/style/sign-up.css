@@ -1,0 +1,150 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+* body {
+  background-color: #faf8f8;
+}
+
+* header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2em 3em 1em 3em;
+  background-color: rgba(92, 119, 150, 0.9);
+}
+
+* header h1 {
+  color: #edf0f1;
+  font-family: 'Dancing Script', cursive, serif;
+}
+
+* header h1 a {
+  text-decoration: none;
+  color: #edf0f1;
+}
+
+* header li a {
+  color: #edf0f1;
+  text-decoration: none;
+  -webkit-transition: all 0.6 ease 0s;
+  transition: all 0.6 ease 0s;
+  padding: 0.8em;
+}
+
+* header li a:hover {
+  background-color: #edf0f1;
+  color: #9c9ce2;
+  padding: 0.8em;
+  border-radius: 0.2em;
+}
+
+* header li {
+  color: #edf0f1;
+  text-decoration: none;
+  list-style: none;
+  display: inline-block;
+  padding: 0em 1em;
+}
+
+* header button {
+  color: #edf0f1;
+  text-decoration: none;
+  border: none;
+  padding: 0.8em;
+  background-color: #9c9ce2;
+  border-radius: 3em;
+  margin-right: 0.7em;
+}
+
+* header button:hover {
+  background-color: #edf0f1;
+  color: #9c9ce2;
+}
+
+* header .n-logo {
+  cursor: pointer;
+}
+
+* #content {
+  width: 40%;
+  margin: auto;
+  margin-top: 2em;
+}
+
+* #content .signup {
+  padding: 1.5em 1em;
+  margin: auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  border-radius: 0em 0em 5px 5px;
+}
+
+* #content .title {
+  padding: 0.5em;
+  margin: auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(92, 119, 150, 0.9);
+  border-radius: 5px 5px 0em 0em;
+  padding: 1em;
+  color: #FFF;
+}
+
+* #content .elements {
+  width: 100%;
+  font-size: 14px;
+  padding: 0.2em;
+}
+
+* #content label {
+  font-size: 18px;
+}
+
+* #content #singup-button {
+  width: 100%;
+  padding: 0.5em;
+  background-color: rgba(92, 119, 150, 0.9);
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 1em;
+}
+
+* #content #singup-button:hover {
+  background-color: rgba(55, 86, 121, 0.9);
+  cursor: pointer;
+}
+
+* #content:hover {
+  border-radius: 4px;
+  -webkit-box-shadow: 0.5px 0.5px 0.5px black;
+          box-shadow: 0.5px 0.5px 0.5px black;
+}
+/*# sourceMappingURL=sign-up.css.map */
