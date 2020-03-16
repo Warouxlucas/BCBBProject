@@ -15,11 +15,11 @@
       $firstname = $_POST['firstname'];
       $lastname = $_POST['lastname'];
       $nickename = $_POST['nickname'];
-      $gender = $_POST['gender'];
+      $gender = 1;
       $birthday = $_POST['birthday'];
       $email = $_POST['email'];
       $password = $_POST['pwd'];
-
+//$_POST['gender']
       $pdoQuery = "INSERT INTO users(firstname, lastname, nickname, male, birthday, email, pwd) VALUES (:firstname,:lastname,:nickname,:male,:birthday,:email,:pwd)";
       
       $pdoQuery_run = $db->prepare($pdoQuery);
