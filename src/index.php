@@ -78,6 +78,7 @@ $stmp= null;
                 <li><a href="development.php">Development</a></li>
                 <li><a href="smalltalk.php">Smalltalk</a></li>
                 <li><a href="events.php">Events</a></li>
+                <li><a href="verysecret.php">Verysecret</a></li>
             </ul>
         </nav>
         <div id="btns">

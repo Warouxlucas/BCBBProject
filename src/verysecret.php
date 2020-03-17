@@ -74,42 +74,38 @@ if($boardspassword==$password){
                         ...</br>
                         <button class="btn btn-primary">En savoir plus</button>
                     </a>
-
                 </li>
             </ul>
         </div>
     </div>
-</body>
-<?php
+
+    <?php
     }
 
     $req->closeCursor();
-
     ?>
-
-
-
-<?php }
+    <?php }
 else{
 ?>
-<h1>The secret board</h1>
-<p>You need to pass a password in the url to get in<br>
-    this field can help</p>
-<form class="login__form" action="verysecret.php" method="GET">
-    <div class="login__form__element">
-        <label for="pwd">Password : </label>
-        <input type="password" name="password" id="pwd" required>
-    </div>
-    <div class="form-example">
-        <input type="submit" name="submitBtnLogin" id="submitBtnLogin" value="login!">
-    </div>
-</form>
+    <h1>The secret board</h1>
+    <p>You need to pass a password in the url to get in<br>
+        this field can help</p>
+    <form class="login__form" action="verysecret.php" method="GET">
+        <div class="login__form__element">
+            <label for="pwd">Password : </label>
+            <input type="password" name="password" id="pwd" required>
+        </div>
+        <div class="form-example">
+            <input type="submit" name="submitBtnLogin" id="submitBtnLogin" value="login!">
+        </div>
+    </form>
 
+    <?php
+}?>
 
 </body>
-<?php
-}
-include 'footer.php'
- ?>
+
+<?php include 'footer.php'?>
+
 
 </html>
