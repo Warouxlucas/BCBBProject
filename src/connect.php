@@ -20,7 +20,8 @@
       $password = $_POST['pwd'];
 //$_POST['male']
       $pdoQuery = "INSERT INTO users(firstname, lastname, nickname, male, birthday, email, pwd) VALUES (:firstname,:lastname,:nickname,:male,:birthday,:email,:pwd)";
-      
+     
+
 
 
       $pdoQuery_run = $db->prepare($pdoQuery);

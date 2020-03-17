@@ -1,6 +1,6 @@
 <?php session_start();
 include "connect.php";
-include "nav.php";
+require_once "nav.php";
 ?>
 
 <?php
@@ -105,7 +105,7 @@ else{
 
 </body>
 
-<?php include 'footer.php'?>
+<?php require_once 'footer.php'?>
 
 
 </html>
