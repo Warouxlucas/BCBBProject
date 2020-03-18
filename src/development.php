@@ -7,10 +7,13 @@ include 'nav.php';
 
 <div class="container top">
 
-    <h1>Topics</h1>
+    <h1>Topics</h1> <?php 
+if (isset($_SESSION['sess_user_id'] )){?>
     <a href="topicsCreate.php">
         <button class="btn btn-outline-info">Create a topic</button>
     </a>
+    <?php 
+}?>
 
 
 
@@ -66,12 +69,13 @@ include 'nav.php';
         </ul>
     </div>
 </div>
-    <?php
+<?php
     }
 
     $req->closeCursor();
 
     ?>
-    </body>
+</body>
 <?php include("footer.php"); ?>
-    </html>
+
+</html>

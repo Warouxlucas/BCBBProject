@@ -6,10 +6,13 @@ include 'nav.php';
 
 <div class="container top">
 
-    <h1>Topics</h1>
+    <h1>Topics</h1> <?php 
+if (isset($_SESSION['sess_user_id'] )){?>
     <a href="topicsCreate.php">
         <button class="btn btn-outline-info">Create a topic</button>
     </a>
+    <?php 
+}?>
 
 
 
@@ -33,48 +36,49 @@ include 'nav.php';
         $differenceDate =  $date->diff($now)->format("%d days ago ");
     ?>
 
-        <div class="container">
+    <div class="container">
 
 
 
-            <ul class="list-group">
-                <li class="list-group-item">
-                    <?php
+        <ul class="list-group">
+            <li class="list-group-item">
+                <?php
 
                     if ($differenceDate == 0) {
                         $differenceDate = 'today';
                     }
                     ?>
 
-                    <h1>
-                        <?php echo $data['title'] ?>
-                    </h1>
-                    <h5>
-                        <?php echo $differenceDate ?>
-                    </h5>
-                    <p>Autor : <?php echo $data['nickname'] ?></p>
+                <h1>
+                    <?php echo $data['title'] ?>
+                </h1>
+                <h5>
+                    <?php echo $differenceDate ?>
+                </h5>
+                <p>Autor : <?php echo $data['nickname'] ?></p>
 
-                    <?php echo substr($data['content'], 0, 100) ?>
-                    <a href="topicsDetail.php?title=<?php echo urlencode($data['title']) ?>&id=<?php echo $data['topics_id'] ?>">
-                        ...</br>
-                        <button class="btn btn-primary">En savoir plus</button>
-                    </a>
+                <?php echo substr($data['content'], 0, 100) ?>
+                <a
+                    href="topicsDetail.php?title=<?php echo urlencode($data['title']) ?>&id=<?php echo $data['topics_id'] ?>">
+                    ...</br>
+                    <button class="btn btn-primary">En savoir plus</button>
+                </a>
 
-                </li>
-            </ul>
-        </div>
+            </li>
+        </ul>
     </div>
-                
-    <?php
+</div>
+
+<?php
     }
 
     $req->closeCursor();
 
     ?>
 </div>
-    <div class="test">
-        `<?php include 'footer.php' ?>
-    </div>
-    </body>
+<div class="test">
+    `<?php include 'footer.php' ?>
+</div>
+</body>
 
-    </html>
+</html>

@@ -1,4 +1,4 @@
-<?php
+<?php session_start();
 include 'nav.php';
 ?>
 
@@ -71,13 +71,17 @@ while ($data = $reqMessage->fetch()) {
 
 
     ?>
+    <?php 
+if (isset($_SESSION['sess_user_id'] )){?>
+
 
     <form class="form-group" action="topicsDetail.php?title=<?php echo urlencode($title) ?>&id=<?php echo $idTopics ?>"
         method="POST">
         <textarea name="message" id="" cols="30" rows="10" class="message form-control" required></textarea>
-        <button type="submit" class="btn btn-outline-success">Envoyé</button>
+        <button type="submit" class="btn btn-outline-success">Envoyer</button>
     </form>
-
+    <?php 
+}?>
     <?php
 
     $reqPostMessage = $db->prepare('INSERT INTO messages(content_message, users_id, topics_id) VALUES (:content_message, :users_id, :topics_id)');

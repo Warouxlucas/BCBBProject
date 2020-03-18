@@ -35,7 +35,6 @@ if (isset($_POST['submitBtnLogin'])) {
       $count = $stmt->rowCount();
       $row   = $stmt->fetch(PDO::FETCH_ASSOC);
 
-
       if ($count == 1 && !empty($row)) {
         $_SESSION['sess_user_id'] = $row['users_id'];
         $_SESSION['nickname'] = $row['nickname'];
