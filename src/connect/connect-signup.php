@@ -13,7 +13,7 @@
     if(isset($_POST['singupsubmit']))
     {
       $firstname = $_POST['firstname'];
-      $lastname = $_POST['lastname'];
+      $lastname = $_POST['lastname']; 
       $nickename = $_POST['nickname'];
       $gender = 1;
       $birthday = $_POST['birthday'];
