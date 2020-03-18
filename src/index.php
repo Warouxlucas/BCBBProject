@@ -74,11 +74,17 @@ $stmp= null;
         <h1 class="n-logo">The Weaver</h1>
         <nav>
             <ul class="nav-links">
-                <li><a href="general.php">General</a></li>
+                <?php
+         foreach($boards as $board){
+        $boardsname= $board->name;
+             echo '<li><a href="'.strtolower( trim( $boardsname)).'.php">'.$boardsname.'</a></li>';
+         }
+        ?>
+                <!-- <li><a href="general.php">General</a></li>
                 <li><a href="development.php">Development</a></li>
                 <li><a href="smalltalk.php">Smalltalk</a></li>
                 <li><a href="events.php">Events</a></li>
-                <li><a href="verysecret.php">Verysecret</a></li>
+                <li><a href="verysecret.php">Verysecret</a></li> -->
             </ul>
         </nav>
         <div id="btns">
