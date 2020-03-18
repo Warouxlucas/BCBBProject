@@ -3,6 +3,11 @@
 include 'connect/connect-signin.php';
 include 'connect/login-out.php';
 
+// requete recup boards
+$boardsql = "SELECT * FROM boards";
+$stmp = $db->prepare($boardsql);
+$stmp->execute();
+$boards = $stmp->fetchAll(PDO::FETCH_OBJ);
 ?>
 
 
@@ -44,11 +49,17 @@ include 'connect/login-out.php';
     </a>
     <nav>
         <ul class="nav-links">
-            <li><a href="general.php">General</a></li>
+            <?php
+         foreach($boards as $board){
+        $boardsname= $board->name;
+             echo '<li><a href="'.strtolower( trim( $boardsname)).'.php">'.$boardsname.'</a></li>';
+         }
+        ?>
+            <!-- <li><a href="general.php">General</a></li>
             <li><a href="development.php">Development</a></li>
             <li><a href="smalltalk.php">Smalltalk</a></li>
             <li><a href="events.php">Events</a></li>
-            <li><a href="verysecret.php">Very secret</a></li>
+            <li><a href="verysecret.php">Very secret</a></li> -->
         </ul>
     </nav>
     <div id="btns">
