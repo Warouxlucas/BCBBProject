@@ -66,6 +66,7 @@ include 'nav.php'
                 <option value="4">Smaltalk</option>
                 <option value="5">Events</option>
                 <option value="6">verysecret</option>
+                <option value="7">Random</option>
             </select>
             <br>
             <button type="submit" class="btn btn-success">Create</button>
