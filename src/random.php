@@ -29,12 +29,15 @@ if (isset($_SESSION['sess_user_id'] )){?>
          ON topics.users_id=users.users_id
          WHERE boards_id = 7
          ORDER BY creation_date DESC 
+         
     '
     );
 
     while ($data = $req->fetch()) {
         $date = new DateTime($data['creation_date']);
         $differenceDate =  $date->diff($now)->format("%d days ago ");
+       
+
     ?>
 
     <div class="container">

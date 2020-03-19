@@ -52,6 +52,7 @@ include 'nav.php';
     while ($data = $req->fetch()) {
         $date = new DateTime($data['creation_date']);
         $differenceDate =  $date->diff($now)->format("%d days ago ");
+    
     ?>
 
     <div class="container" id="topic-container">
