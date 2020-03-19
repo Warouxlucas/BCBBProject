@@ -14,7 +14,7 @@ include 'connect/login-out.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>General</title>
 
-    
+
 
     <!-- new log in  -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -35,7 +35,9 @@ include 'connect/login-out.php';
 <body>
     <header class="header">
 
-        <a href="../index.php" class="n-logo"><h1 class="n-logo">The Weaver</h1></a>
+        <a href="../index.php" class="n-logo">
+            <h1 class="n-logo">The Weaver</h1>
+        </a>
         <nav>
             <ul class="nav-links">
                 <li><a href="general.php">General</a></li>

@@ -1,0 +1,25 @@
+{
+  "name": "bcbbproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "emojionearea": "^3.4.1",
+    "jquery": "^3.4.1",
+    "wdt-emoji-bundle": "^0.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Warouxlucas/BCBBProject.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Warouxlucas/BCBBProject/issues"
+  },
+  "homepage": "https://github.com/Warouxlucas/BCBBProject#readme"
+}
