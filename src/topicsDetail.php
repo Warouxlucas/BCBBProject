@@ -44,9 +44,11 @@ include 'nav.php';
     while ($data = $req->fetch()) {
     ?>
         <div class="container top">
-            <a href="topics.php">
-                <button class="btn btn-primary">Retour aux topics</button>
-            </a>
+            <div class="returnTopics">
+                <a href="topics.php">
+                    <button class="btn btn-primary">Retour aux topics</button>
+                </a>
+            </div>
             <div class="media">
                 <img src="<?php echo $grav_url ?>" alt="" class="mr-3">
                 <div class="media-body">

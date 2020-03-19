@@ -6,10 +6,12 @@ include 'nav.php';
 
 <div class="container top">
 
-    <h1>Topics</h1>
-    <a href="topicsCreate.php">
-        <button class="btn btn-outline-info">Create a topic</button>
-    </a>
+    <div class="createTopics">
+        <h1>Topics</h1>
+        <a href="topicsCreate.php">
+            <button class="btn btn-outline-info">Create a topic</button>
+        </a>
+    </div>
 
 
 
@@ -63,18 +65,18 @@ include 'nav.php';
                 </li>
             </ul>
         </div>
-    </div>
-                
-    <?php
+</div>
+
+<?php
     }
 
     $req->closeCursor();
 
-    ?>
+?>
 </div>
-    <div class="test">
-        `<?php include 'footer.php' ?>
-    </div>
-    </body>
+<div class="test">
+    `<?php include 'footer.php' ?>
+</div>
+</body>
 
-    </html>
+</html>

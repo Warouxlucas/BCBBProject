@@ -34,10 +34,14 @@ body .card-header {
   background-color: lightgray;
 }
 
-body .container {
-  margin-top: 10em;
-  min-height: 60vh;
+.container:first-of-type {
+  margin-top: 20vh;
   color: white;
+}
+
+body .container {
+  margin-bottom: 2vh;
+  padding: 0;
 }
 
 body .container h1 {
@@ -73,5 +77,14 @@ body .container .mr-3 {
 
 body .container .mt-3 img {
   margin-right: 1em;
+}
+
+.createTopics {
+  margin-top: 30vh;
+  margin-bottom: 10vh;
+}
+
+.returnTopics {
+  margin-top: 30vh;
 }
 /*# sourceMappingURL=topics.css.map */
