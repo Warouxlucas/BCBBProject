@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 include 'connect-signup.php';
 
@@ -46,7 +46,7 @@ include 'connect-signup.php';
                         <h1 class="title">Sign up</h1>
                         <div class="signup">
 
-                                <form action="connect.php" method="POST">
+                                <form action="connect-signup.php" method="POST">
                                         <!-- First name - Last name -->
                                         <label for="first-name">First name:</label>
                                         <input type="text" id="first-name" name="firstname" class="elements"> <br> <br>
@@ -63,8 +63,7 @@ include 'connect-signup.php';
                                         </div>
                                         <!-- Birthday -->
                                         <label for="birthday:">Birthday:</label>
-                                        <input type="date" id="birthday" name="birthday" value="20/1/1999"
-                                                min="01/01/1950" max="01/01/2012"> <br> <br>
+                                        <input type="date" id="birthday" name="birthday" value="20/1/1999" min="01/01/1950" max="01/01/2012"> <br> <br>
                                         <!-- Email -->
                                         <label for="email">Email:</label>
                                         <input type="email" id="email" name="email"> <br> <br>
@@ -73,8 +72,7 @@ include 'connect-signup.php';
                                         <input type="password" id="pwd" name="pwd"> <br> <br>
                                         <!-- sign up button  -->
                                         <div id="wrapper">
-                                                <input type="submit" name="singupsubmit" id="singup-button"
-                                                        value="Sign up">
+                                                <input type="submit" name="singupsubmit" id="singup-button" value="Sign up">
                                         </div>
                                 </form>
                         </div>

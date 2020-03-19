@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 include 'connect/connect-signup.php';
 include 'connect.php';
@@ -47,6 +47,7 @@ include 'connect.php';
                 <div id="content">
                         <h1 class="title">Create Account</h1>
                         <div class="signup">
+<<<<<<< HEAD
 
                                 <form action="connect.php" method="POST">
 
@@ -61,6 +62,19 @@ include 'connect.php';
                                         <label for="nickname">Nickname</label>
                                         <input type="text" id="nickname" name="nickname" class="nickname elements"
                                                 placeholder="Nickname"> <br> <br>
+=======
+
+                                <form action="Sign-up/connect-signup.php" method="POST">
+
+                                        <!-- First name - Last name -->
+
+                                        <label for="first-name">First name</label>
+                                        <input type="text" id="first-name" name="firstname" class="elements" placeholder="First name"> <br> <br>
+                                        <label for="last-name">Last name</label>
+                                        <input type="text" id="last-name" name="lastname" class="lastname elements" placeholder="Last name"> <br> <br>
+                                        <label for="nickname">Nickname</label>
+                                        <input type="text" id="nickname" name="nickname" class="nickname elements" placeholder="Nickname"> <br> <br>
+>>>>>>> ajoutsTom
 
                                         <!-- Genders -->
 
@@ -74,26 +88,42 @@ include 'connect.php';
                                         <!-- Birthday -->
 
                                         <label for="birthday:">Birthday</label>
+<<<<<<< HEAD
                                         <input type="date" id="birthday" name="birthday" value="20/1/1999"
                                                 min="01/01/1950" max="01/01/2012" class="elements"> <br> <br>
+=======
+                                        <input type="date" id="birthday" name="birthday" value="20/1/1999" min="01/01/1950" max="01/01/2012" class="elements"> <br> <br>
+>>>>>>> ajoutsTom
 
                                         <!-- Email -->
 
                                         <label for="email">Email</label>
+<<<<<<< HEAD
                                         <input type="email" id="email" name="email" class="elements"
                                                 placeholder="Example@me.com"> <br> <br>
+=======
+                                        <input type="email" id="email" name="email" class="elements" placeholder="Example@me.com"> <br> <br>
+>>>>>>> ajoutsTom
 
                                         <!-- password -->
 
                                         <label for="pwd">Password</label>
+<<<<<<< HEAD
                                         <input type="password" id="pwd" name="pwd" class="elements"
                                                 placeholder="Password"> <br> <br>
+=======
+                                        <input type="password" id="pwd" name="pwd" class="elements" placeholder="Password"> <br> <br>
+>>>>>>> ajoutsTom
 
                                         <!-- sign up button  -->
 
                                         <div id="wrapper">
+<<<<<<< HEAD
                                                 <input type="submit" name="singupsubmit" id="singup-button"
                                                         value="Sign up">
+=======
+                                                <input type="submit" name="signupsubmit" id="singup-button" value="Sign up">
+>>>>>>> ajoutsTom
                                         </div>
                                 </form>
                         </div>
